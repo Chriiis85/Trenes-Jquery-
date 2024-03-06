@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Madimi One", sans-serif;
+}
+
+/*------------------------------------------------------TITULOS CON LOS TRENES AL LADO-----------------------------------------------------------*/
+.titulosTrenes {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.imagen1-titulo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagen1-titulo > img {
+  width: 150%;
+  height: 30%;
+}
+
+.titulo-Tren {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagen2-titulo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen2-titulo > img {
+  width: 150%;
+  height: 30%;
+}
+/*-------------------------------------------------------ESTILOS DEL MODAL ABIERTO---------------------------------------------------------------*/
+.card {
+  width: 200px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #f8fbfe;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+  width: 15px;
+  height: 15px;
+  transition: 0.3s;
+}
+
+.yellow {
+  background-color: #ffbd44;
+  transition: 0.3s;
+  width: 15px;
+  height: 15px;
+  transition: 0.3s;
+}
+
+.green {
+  background-color: #00ca4e;
+  transition: 0.3s;
+  width: 15px;
+  height: 15px;
+  transition: 0.3s;
+}
+
+.red:hover {
+  transform: scale(1.2);
+}
+
+.green:hover {
+  transform: scale(1.2);
+}
+
+.yellow:hover {
+  transform: scale(1.2);
+}
+
+.card__content {
+  text-align: justify;
+}
+
+/*---------------------------------------------------------ACORDEON PREGUNTAS FRECUENTES-------------------------------------------------------*/
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.accordion-header {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background-color: rgba(0, 123, 255, 0.25);
+  border-radius: 5px;
+}
+
+.accordion-header.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+/*-------------------------------------------------------------------REGISTER FORM--------------------------------------------------------------*/
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #81005e;
+  box-shadow: rgba(129, 0, 95, 0.7);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #81005e;
+  font-family: "Madimi One", sans-serif;
+
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.error-message {
+  display: none;
+  color: #dc3545;
+}
+
+/* Estilos para los campos con errores */
+.error {
+  border-color: #dc3545 !important;
+}
+
+.error-message {
+  display: block;
+}
+
+/*-----------------------------------------------------------------------SLIDER----------------------------------------------------------------*/
+.card_slider {
+  width: 93vw;
+  background-color: #222222;
+  padding: 3rem;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider li {
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+.slider figure:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: #1a2e35;
+  width: 101%;
+  height: 65%;
+  border-radius: 120px 0 120px 0;
+  z-index: 0;
+}
+
+.slider .slick-active li:hover figure img,
+.slider .slick-current + .slick-active figure img,
+.slider .slick-current + .slick-active li .title,
+.slider .slick-current + .slick-active li p,
+.slider .slick-active li:hover .title,
+.slider .slick-active li:hover p {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.slider .slick-arrow:before {
+  font-family: "FontAwesome";
+  font-size: 40px;
+  margin-left: -15px;
+}
+
+.slick-prev {
+  left: 30px;
+}
+
+.slick-next {
+  right: 30px;
+}
+
+.slick-prev:before {
+  content: "\f104";
+}
+
+.slick-next:before {
+  content: "\f105";
+}
+
+.slider li .title {
+  margin-top: 10px;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.slider li p {
+  position: relative;
+  top: -15px;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+@media (max-width: 920px) {
+  .slider li .title {
+    font-size: 14px;
+  }
+  .slider li p {
+    font-size: 12px;
+  }
+}
+/*------------------------------------------------------------------TARJETAS TRENES----------------------------------------------------------*/
+.cardTrenes {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: black;
+}
+
+.cardTrenes img {
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardTrenes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.cardTrenes__content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  border-radius: 10px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardTrenes:hover .cardTrenes__content {
+  transform: rotateX(0deg);
+}
+
+.cardTrenes__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.cardTrenes:hover svg {
+  scale: 0;
+}
+
+.cardTrenes__description p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: 14px;
+  color: black;
+}
+/*-----------------------------------------------------------------------FOOTER--------------------------------------------------------------*/
+footer {
+  width: 100vw;
+  height: 20vh;
+  padding: 10px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.creador-footer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #222222;
+}
+
+.contenido-footer {
+  width: 100%;
+  height: 70%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contenido-footer-logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.contenido-footer-logo > img {
+  width: 30%;
+  height: 60%;
+}
+
+.contenido-footer-contenido {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.barra-vertical {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.3);
+}
+
+.contenido-footer-contenido > p {
+  width: 200px;
+  transition: 0.3s;
+}
+
+.contenido-footer-contenido > p:hover {
+  display: block;
+  cursor: pointer;
+  transform: translateY(-10px);
+}

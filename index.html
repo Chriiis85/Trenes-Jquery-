@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHWEB TRAINS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- script para jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery para el Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+
+    <!---->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <h1 id="register">register</h1>
+
+    <!--SECCION DONDE SE MUESTRAN LOS TRENES DE CERCANIAS
+    <section class="titulosTrenes">
+      <div class="imagen1-titulo"><img src="Imagenes/civia.png" alt="" /></div>
+      <h1 class="titulo-Tren">Trenes de Cercanías</h1>
+      <div class="imagen2-titulo"><img src="Imagenes/civia.png" alt="" /></div>
+    </section>-->
+
+    <section class="card_slider">
+      <ul class="slider">
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/Cercanias/civia.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe Cercanías - 465</p>
+              <p class="cardTrenes__description">
+                Civia es el nombre genérico con el que denominamos al último
+                modelo de tren de Cercanías de la series 462, 463, 464 y 465. Se
+                desarrolló en el año 2000 como consecuencia de las necesidades
+                de transporte creadas por el incremento de la demanda; la
+                satisfacción de la movilidad de las grandes áreas
+                metropolitanas; la construcción de nuevas infraestructuras
+                ferroviarias; y la exigencia de renovar el parque.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/Cercanias/446.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe Cercanías 446</p>
+              <p class="cardTrenes__description">
+                Esta serie surgio, en los años 1980, fruto de las pruebas para
+                un nuevo tipo de material, ante las necesidades surgidas por el
+                fuerte aumento de la demanda del transporte en las grandes
+                metrópolis españolas. En un principio, se desarrollo el
+                prototipo 445.001, construido por fabricantes nacionales con el
+                apoyo del Centro para el Desarrollo Tecnológico e Industrial
+                (CDTI) Esta iniciativa fue modificada para construir la serie
+                446.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/Cercanias/447.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe Cercanías 447</p>
+              <p class="cardTrenes__description">
+                La serie 447, sucesora de la 446, mejora a ésta por una mayor
+                aceleración, un considerable aumento de la velocidad máxima, 120
+                km/h, una reducción del consumo energético, una considerable
+                reducción de los costes de mantenimiento y un mayor confort de
+                marcha. Esta serie es casi identica a su predecesora, con la que
+                puede circular acoplada con mando múltiple.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/Cercanias/450.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe Cercanías S-450 y 451</p>
+              <p class="cardTrenes__description">
+                En un principio, se puso en circulación 12 composiciones
+                constituidas por un remolque con cabina y cuatro remolques
+                intermedios y remolcadas por locomotoras de la serie 269-200,
+                que fueron sustituidas posteriormente por coches motores,
+                también de dos pisos. En 1994, los trenes de la serie 450 y 451
+                pasaron a tener la composición actual.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <br />
+    <!--SECCION DONDE SE MUESTRAN LOS TRENES DE MEDIA DISTANCIA
+    <section class="titulosTrenes">
+      <div class="imagen1-titulo"><img src="Imagenes/alvia.png" alt="" /></div>
+      <h1 class="titulo-Tren">Trenes de Cercanías</h1>
+      <div class="imagen2-titulo"><img src="Imagenes/alvia.png" alt="" /></div>
+    </section>-->
+    <br />
+    <section class="card_slider">
+      <ul class="slider">
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/MediaDistancia/S120.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe S-120</p>
+              <p class="cardTrenes__description">
+                El 17 de mayo de 2006, el primer tren de la serie 120 comenzó su
+                circulación en la relación Madrid-Barcelona bajo la denominación
+                comercial de Alvia. Este tren autopropulsado cuenta con un
+                sistema de rodadura desplazable basado en los bogies Brava
+                desarrollados por CAF, que permiten prestar servicio en las
+                líneas de alta velocidad y de sus antenas de ancho ibérico, al
+                adaptarse a cada ancho de vía en tan sólo 3 segundos.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/MediaDistancia/S121.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe S-121</p>
+              <p class="cardTrenes__description">
+                Los trenes de la serie 121 son trenes de alta versatilidad
+                capaces de circular por vías de alta velocidad y de ancho
+                ibérico fabricados por CAF y Alstom. Disponen de cambio de ancho
+                y pueden operar en dos tensiones (3 kVcc y 25 KVca) con uan
+                velocidad máxima de 250 km/h en líneas electrificadas a 25.000
+                Voltios de Corriente Alterna a 50Hz y de 220 km/h en líneas
+                electrificadas a 3.000 Voltios de Corriente Continua.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/MediaDistancia/S130.jpg" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe S-130</p>
+              <p class="cardTrenes__description">
+                Los trenes de la serie 130, que se componen de 11 coches Talgo
+                de la serie 7 y dos cabezas tractoras fabricadas por Talgo en su
+                parte mecánica y por Bombardier en la eléctrica, pueden circular
+                por las líneas de ancho internacional de alta velocidad a 250
+                km/h y a 200 km/h en las convencionales. Esta serie estará
+                formada por 45 composiciones.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cardTrenes">
+            <img src="Imagenes/MediaDistancia/S730" alt="" />
+            <div class="cardTrenes__content">
+              <p class="cardTrenes__title">Renfe S-730 (Dual)</p>
+              <p class="cardTrenes__description">
+                En junio de 2012 se estrenó el tren híbrido s-730 en el servicio
+                Madrid-Galicia. Se trata del primer tren híbrido de la compañía,
+                con tecnología de tracción tanto diésel como eléctrica, lo que
+                permite extender las ventajas de la alta velocidad a tramos sin
+                electrificar ya que cuenta con un sistema de rodadura
+                desplazable que también le permite circular por vías de ancho
+                UIC (ancho AVE) o de ancho convencional.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Modal Politicas de Privacidad -->
+    <div id="modalPoliticas" class="card" style="display: none">
+      <div class="tools">
+        <div class="circle">
+          <a href="#" rel="modal:close"><span class="red box"></span></a>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <h3>POLITICAS DE PRIVACIDAD EN CHWEB</h3>
+        <p>
+          CHWeb te informa sobre su Política de Privacidad respecto del
+          tratamiento y protección de los datos de carácter personal de los
+          usuarios y clientes que puedan ser recabados por la navegación o
+          contratación de servicios a través del sitio Web CHWeb.es.
+        </p>
+        <p>
+          En este sentido, la página CHWeb garantiza el cumplimiento de la
+          normativa vigente en materia de protección de datos personales,
+          reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección
+          de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD).
+        </p>
+        <p>
+          Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo
+          y del Consejo de 27 de abril de 2016 relativo a la protección de las
+          personas físicas (RGPD).
+        </p>
+        <p>
+          El uso de sitio Web implica la aceptación de esta Política de
+          Privacidad así como las condiciones incluidas en el Aviso Legal.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Preguntas con acordeon -->
+    <div id="modalPreguntas" class="card" style="display: none">
+      <div class="tools">
+        <div class="circle">
+          <a href="#" rel="modal:close"><span class="red box"></span></a>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <h3>PREGUNTAS FRECUENTES ACERCA DE CHWEB</h3>
+      <div class="card__content">
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">¿De que trata la web?</div>
+            <div class="accordion-content">
+              La pagina web es simplemente un ejercicio de prueba usando la
+              librería JQUERY. En esta pagina se pueden visualizar animaciones
+              creadas con JQUERY, creacion/eliminación/modificación del DOM
+              mediante el uso de JQUEY y otro tipo de elementos.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              ¿Que contenido se muestra en la web?
+            </div>
+            <div class="accordion-content">
+              El contenido principal de la web se basa en la flota de trenes de
+              Renfe. En esta página se muestran algunos de sus modelos y los
+              tipos trenes que tiene la empresa española. Esta página se enfoca
+              en los curiosos del mundo del ferrocarril y en aquellos curiosos
+              que desean saber mas sobre este medio de transporte.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">¿Que es Renfe?</div>
+            <div class="accordion-content">
+              Renfe, también conocida como Grupo Renfe y legalmente denominada
+              Renfe-Operadora, E. P. E., es la principal empresa de transporte
+              ferroviario de pasajeros y mercancías de España. Es una entidad
+              pública empresarial dependiente del Ministerio de Transportes,
+              Movilidad y Agenda Urbana.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalRegister" class="registerForm" style="display: none">
+      <div class="tools">
+        <div class="circle">
+          <a href="#" rel="modal:close"><span class="red box"></span></a>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <form id="registroForm" action="">
+          <h1>FORMULARIO DE REGISTRO</h1>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" />
+            <span id="nombreError" class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" />
+            <span id="apellidosError" class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" />
+            <span id="telefonoError" class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo:</label>
+            <input type="text" name="correo" id="correo" />
+            <span id="correoError" class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" name="usuario" id="usuario" />
+            <span id="usuarioError" class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Contraseña:</label>
+            <input type="password" name="pwd" id="pwd" />
+            <span id="pwdError" class="error-message"></span>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <section class="contenido-footer">
+        <article class="contenido-footer-logo">
+          <img src="Imagenes/logoRenfe.png" alt="" />
+        </article>
+        <div class="barra-vertical"></div>
+        <article class="contenido-footer-contenido">
+          <p id="politicasPrivacidad">POLITICAS DE PRIVACIDAD</p>
+          <p id="preguntasFrecuentes">PREGUNTAS FRECUENTES</p>
+          <p>CONTACTA CON NOSOTROS</p>
+        </article>
+      </section>
+      <section class="creador-footer">
+        CHWebPage - SPANISH TRAINS WEBPAGE | MADE BY CHRISTIAN MORENO DIAZ -
+        2024 ©
+      </section>
+    </footer>
+  </body>
+</html>
