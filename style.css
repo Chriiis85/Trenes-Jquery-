@@ -6,7 +6,39 @@ body {
   overflow-x: hidden;
   font-family: "Madimi One", sans-serif;
 }
+/*----------------------------------------------------------------HEADER-------------------------------------------------------------------------*/
+header {
+  width: 100vw;
+  height: 10vh;
+  padding: 10px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+.buttonLogin {
+  width: 200px;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #81005e;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.buttonLogin:hover {
+  background: #d93648;
+  cursor: pointer;
+  color: white;
+}
 /*------------------------------------------------------TITULOS CON LOS TRENES AL LADO-----------------------------------------------------------*/
 .titulosTrenes {
   width: 100%;
@@ -203,7 +235,9 @@ button {
 }
 
 button:hover {
-  background-color: black;
+  background: #d93648;
+  cursor: pointer;
+  color: white;
 }
 
 .error-message {
@@ -445,11 +479,13 @@ footer {
 
 .contenido-footer-contenido > p {
   width: 200px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .contenido-footer-contenido > p:hover {
   display: block;
   cursor: pointer;
-  transform: translateY(-10px);
+  text-decoration: underline;
+  color: #81005e;
+  /*transform: translateY(-10px);*/
 }

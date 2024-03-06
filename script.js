@@ -115,7 +115,7 @@ $(document).ready(function () {
     dots: false,
     arrows: arrows_to_show,
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 5000,
     infinite: true,
   });
 });
