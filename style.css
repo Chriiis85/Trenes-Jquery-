@@ -5,6 +5,11 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Madimi One", sans-serif;
+  /* Pattern de fondo*/
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
 }
 /*----------------------------------------------------------------HEADER-------------------------------------------------------------------------*/
 header {
@@ -257,7 +262,6 @@ button:hover {
 /*-----------------------------------------------------------------------SLIDER----------------------------------------------------------------*/
 .card_slider {
   width: 93vw;
-  background-color: #222222;
   padding: 3rem;
 }
 
@@ -317,10 +321,18 @@ button:hover {
 
 .slick-prev:before {
   content: "\f104";
+  background-color: black;
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
 }
 
 .slick-next:before {
   content: "\f105";
+  background-color: black;
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
 }
 
 .slider li .title {

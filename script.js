@@ -47,13 +47,13 @@ $(document).ready(function () {
     var telefono = $("#telefono").val();
     var correo = $("#correo").val();
     var usuario = $("#usuario").val();
-    var pwd = $("#pwd").val();
+    var password = $("#pwd").val();
 
     // Validar nombre
     if (!nombre.trim()) {
       $("#nombreError").text("Nombre no puede estar vacío").show();
     } else {
-      $("#nombreError").hide();
+      $("#nombreError").hide(); // Ocultar el mensaje de error
     }
 
     // Validar apellidos
@@ -85,10 +85,40 @@ $(document).ready(function () {
     }
 
     // Validar contraseña
-    if (!pwd.trim()) {
+    if (!password.trim()) {
       $("#pwdError").text("Contraseña no puede estar vacía").show();
+      return; // Detener el envío del formulario
+    }
+
+    var strength = 0;
+
+    // Longitud mínima
+    if (password.length >= 8) {
+      strength += 1;
+    }
+    // Caracteres especiales
+    if (password.match(/[$&+,:;=?@#|'<>.^*()%!-]/)) {
+      strength += 1;
+    }
+    // Letras mayúsculas y minúsculas
+    if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
+      strength += 1;
+    }
+    // Números
+    if (password.match(/[0-9]/)) {
+      strength += 1;
+    }
+
+    // Evaluar fortaleza
+    if (strength < 2) {
+      $("#pwdError").text(
+        "La contraseña es débil, por favor elige una más segura"
+      );
+      return; // Detener el envío del formulario
+    } else if (strength == 2 || strength == 3) {
+      $("#pwdError").text("La contraseña es de fortaleza media");
     } else {
-      $("#pwdError").hide();
+      $("#pwdError").text("La contraseña es fuerte");
     }
   });
 
