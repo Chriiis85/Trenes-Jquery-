@@ -1,5 +1,6 @@
 //FUNCIONAMIENTO DEL MODAL
 $(document).ready(function () {
+  //Mostrar modal de politicas de privacidad
   $("#politicasPrivacidad").click(function () {
     $("#modalPoliticas").modal({
       fadeDuration: 500,
@@ -7,6 +8,7 @@ $(document).ready(function () {
     });
   });
 
+  //Mostrar modal de politicas de preguntas frecuentes
   $("#preguntasFrecuentes").click(function () {
     $("#modalPreguntas").modal({
       fadeDuration: 500,
@@ -14,6 +16,7 @@ $(document).ready(function () {
     });
   });
 
+  //Mostrar modal de politicas del formulario de registro
   $("#register").click(function () {
     $("#modalRegister").modal({
       fadeDuration: 500,
@@ -21,23 +24,24 @@ $(document).ready(function () {
     });
   });
 
+  //Acordeón con las preguntas frecuentes
   $(".accordion-header").click(function () {
-    // Oculta todos los contenidos de acordeón excepto el que se hace clic
+    // Oculta todos los contenidos del acordeón excepto el que se hace clic
     $(".accordion-content").not($(this).next()).slideUp();
 
-    // Cambia el icono de todos los encabezados de acordeón
+    // Cambia el icono de todos los encabezados del acordeón
     $(".accordion-header").not($(this)).removeClass("active");
     $(this).toggleClass("active");
 
-    // Muestra u oculta el contenido de acordeón correspondiente
+    // Muestra u oculta el contenido del acordeón
     $(this).next().slideToggle();
   });
 
   //VALIDAR EL FORMULARIO
   $("#registroForm").submit(function (event) {
-    event.preventDefault(); // Evitar envío del formulario por defecto
+    event.preventDefault(); // Evitar envío del formulario al cargar la pagina
 
-    // Validar cada campo
+    // Validar cada campo y recoger el valor
     var nombre = $("#nombre").val();
     var apellidos = $("#apellidos").val();
     var telefono = $("#telefono").val();
@@ -88,10 +92,9 @@ $(document).ready(function () {
     }
   });
 
-  //GlobalVariables
+  //SLIDER CON LOS CONTENEDORES DE LOS TRENES
   var no_of_slides, arrows_to_show;
 
-  //OnWindowResize
   if (
     window.matchMedia("(max-width: 920px)").matches === true &&
     window.matchMedia("(max-width: 621px)").matches === false
